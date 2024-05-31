@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Assembly>RelativePath.dll</Assembly>
+		<ClientId>3441d391-4094-4bb5-ae41-00bd24bd3f4f</ClientId>
+		<FullClassName>RelativePath.App</FullClassName>
+		<Name>FirstAction</Name>
+		<VendorId>ERM</VendorId>
+	</AddIn>
+</RevitAddIns>
