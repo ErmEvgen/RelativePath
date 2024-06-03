@@ -26,7 +26,13 @@ namespace RelativePath
             //TaskDialog.Show("323", "fsdfsdfs");
             var ggg = new Form1();
             ggg.ShowDialog();
-            allRVTFiles.Add(ggg.resPath);
+
+            if (ggg.res ==1 )   allRVTFiles.Add(ggg.resPath);
+            if (ggg.res ==2)
+            {
+                var ddd = new DirectoryInfo (ggg.resFolder).GetFiles("*.rvt").Select(x => x.FullName).ToList();
+                allRVTFiles.AddRange(ddd);
+            }
 
             foreach (var loadFilePath in allRVTFiles)
             {
